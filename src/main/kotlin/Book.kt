@@ -1,3 +1,12 @@
-package org.example
+package org.patchwork
 
-data class Book()
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class Book(
+    val author: String,
+    val title: String,
+    val isbn: String,
+    val isReference: Boolean = false,
+    var isAvailable: Boolean = true
+)

@@ -6,7 +6,7 @@ import io.kotest.matchers.collections.shouldHaveSize
 import org.patchwork.Book
 import org.patchwork.getCheckedOutBooks
 
-class CheckoutTest : StringSpec({
+class CheckedOutTest : StringSpec({
 
     val books = listOf(
         Book("Robert C. Martin", "Clean Code", "9780132350884", isReference = false, isAvailable = true),
