@@ -1,0 +1,37 @@
+[
+    {
+        "author": "J.R.R. Tolkien",
+        "title": "The Hobbit",
+        "isbn": "978-0547928227",
+        "isReference": false,
+        "isAvailable": true
+    },
+    {
+        "author": "George Orwell",
+        "title": "1984",
+        "isbn": "978-0451524935",
+        "isReference": false,
+        "isAvailable": true
+    },
+    {
+        "author": "Harper Lee",
+        "title": "To Kill a Mockingbird",
+        "isbn": "978-0060935467",
+        "isReference": false,
+        "isAvailable": false
+    },
+    {
+        "author": "John Grisham",
+        "title": "A time to kill",
+        "isbn": "978-0922066032",
+        "isReference": false,
+        "isAvailable": false
+    },
+    {
+        "author": "God",
+        "title": "The Bible",
+        "isbn": "978-0670887972",
+        "isReference": true,
+        "isAvailable": true
+    }
+]
