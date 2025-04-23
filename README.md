@@ -73,7 +73,7 @@ docker build -t patchwork-app .
 #### Run the CLI app
 
 ```bash
-docker docker run --rm -it patchwork-app
+docker run --rm -it patchwork-app
 ```
 
 #### Run with a mounted books.json file
