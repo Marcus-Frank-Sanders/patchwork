@@ -4,7 +4,7 @@ FROM gradle:8.5-jdk21 AS builder
 WORKDIR /app
 COPY . .
 
-# Build the fat JAR that includes dependencies
+# Build the JAR that includes dependencies
 RUN ./gradlew clean jar
 
 # --- Runtime Stage ---
