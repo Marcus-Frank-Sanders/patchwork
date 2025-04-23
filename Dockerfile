@@ -12,7 +12,7 @@ FROM eclipse-temurin:21-jdk AS runtime
 
 WORKDIR /app
 
-# Copy the built fat JAR from the builder stage
+# Copy the built JAR from the builder stage
 COPY --from=builder /app/build/libs/patchwork-1.0-SNAPSHOT.jar /app/patchwork.jar
 COPY src/main/resources/books.json /app/books.json
 
