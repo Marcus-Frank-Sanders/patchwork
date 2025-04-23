@@ -1,0 +1,4 @@
+services:
+  patchwork:
+    build: .
+    container_name: patchwork-app-container

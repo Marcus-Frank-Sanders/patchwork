@@ -1,5 +1,6 @@
-package org.patchwork
+package src
 
+import com.patchwork.*
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.string.shouldContain
 import io.mockk.*
@@ -21,10 +22,10 @@ class LibraryTest : StringSpec({
     }
 
     beforeTest {
-        mockkStatic("org.patchwork.LibraryKt")
-        mockkStatic("org.patchwork.SearchKt")
-        mockkStatic("org.patchwork.AdminKt")
-        mockkStatic("org.patchwork.RepositoryKt")
+        mockkStatic("com.patchwork.LibraryKt")
+        mockkStatic("com.patchwork.SearchKt")
+        mockkStatic("com.patchwork.AdminKt")
+        mockkStatic("com.patchwork.RepositoryKt")
 
         every { search(any(), any()) } just Runs
         every { admin(any(), any()) } just Runs
@@ -87,9 +88,9 @@ class LibraryTest : StringSpec({
 //    beforeTest {
 //        clearAllMocks()
 //
-//        mockkStatic("org.patchwork.LibraryKt")
-//        mockkStatic("org.patchwork.SearchKt")
-//        mockkStatic("org.patchwork.AdminKt")
+//        mockkStatic("com.patchwork.LibraryKt")
+//        mockkStatic("com.patchwork.SearchKt")
+//        mockkStatic("com.patchwork.AdminKt")
 //    }
 //
 //    afterTest {

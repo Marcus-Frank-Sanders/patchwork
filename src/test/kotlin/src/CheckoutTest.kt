@@ -1,10 +1,10 @@
 package src
 
+import com.patchwork.Book
+import com.patchwork.checkoutBooks
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.shouldBe
 import io.kotest.matchers.string.shouldContain
-import org.patchwork.Book
-import org.patchwork.checkoutBooks
 import java.io.ByteArrayOutputStream
 import java.io.PrintStream
 
@@ -12,7 +12,7 @@ class CheckoutTest : StringSpec({
 
     val books = mutableListOf(
         Book("Author One", "Book One", "1111111111"),
-        Book("Author Two", "Book Two", "2222222222" ),
+        Book("Author Two", "Book Two", "2222222222"),
         Book("Author Three", "Book Three", "3333333333")
     )
 

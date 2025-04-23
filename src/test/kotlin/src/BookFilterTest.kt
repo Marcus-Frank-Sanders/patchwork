@@ -1,13 +1,13 @@
 package src
 
+import com.patchwork.Book
+import com.patchwork.filterBooksByAuthor
+import com.patchwork.filterBooksByISBN
+import com.patchwork.filterBooksByTitle
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.collections.shouldContainExactly
 import io.kotest.matchers.collections.shouldHaveSize
 import io.kotest.matchers.shouldBe
-import org.patchwork.Book
-import org.patchwork.filterBooksByAuthor
-import org.patchwork.filterBooksByISBN
-import org.patchwork.filterBooksByTitle
 
 class BookFilterTest : StringSpec({
 

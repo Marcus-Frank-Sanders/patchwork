@@ -1,10 +1,10 @@
 package src
 
+import com.patchwork.Book
+import com.patchwork.getCheckedOutBooks
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.collections.shouldContainExactly
 import io.kotest.matchers.collections.shouldHaveSize
-import org.patchwork.Book
-import org.patchwork.getCheckedOutBooks
 
 class CheckedOutTest : StringSpec({
 

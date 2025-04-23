@@ -1,4 +1,4 @@
-package org.patchwork
+package com.patchwork
 
 fun checkoutBooks(selectedBooks: List<Book>, allBooks: MutableList<Book>, userInput: () -> String) {
     if (selectedBooks.isEmpty()) {

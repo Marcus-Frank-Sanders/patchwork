@@ -1,10 +1,10 @@
 package src
 
+import com.patchwork.Book
+import com.patchwork.getCheckedOutBooks
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.string.shouldContain
 import io.kotest.matchers.string.shouldNotContain
-import org.patchwork.Book
-import org.patchwork.getCheckedOutBooks
 import java.io.ByteArrayOutputStream
 import java.io.PrintStream
 

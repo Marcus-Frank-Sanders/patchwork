@@ -1,5 +1,6 @@
 @file:JvmName("AdminKt")
-package org.patchwork
+
+package com.patchwork
 
 fun admin(books: List<Book>, userInput: () -> String) {
     var stayInAdmin = true
@@ -16,10 +17,12 @@ fun admin(books: List<Book>, userInput: () -> String) {
                     println("[$i] - ${book.title} by ${book.author} (ISBN: ${book.isbn})")
                 }
             }
+
             "b" -> {
                 println("Returning to main menu.")
                 stayInAdmin = false
             }
+
             else -> println("Invalid input.")
         }
     }

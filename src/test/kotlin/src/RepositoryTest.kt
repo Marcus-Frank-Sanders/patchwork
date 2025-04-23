@@ -1,12 +1,12 @@
 package src
 
+import com.patchwork.Book
+import com.patchwork.repository
+import com.patchwork.updateBooks
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.collections.shouldHaveSize
 import io.kotest.matchers.shouldBe
 import kotlinx.serialization.json.Json
-import org.patchwork.Book
-import org.patchwork.repository
-import org.patchwork.updateBooks
 import java.io.File
 
 class RepositoryTest : StringSpec({

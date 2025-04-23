@@ -1,5 +1,6 @@
 @file:JvmName("SearchKt")
-package org.patchwork
+
+package com.patchwork
 
 fun search(books: MutableList<Book>, userInput: () -> String) {
     var keepSearching = true
@@ -12,18 +13,22 @@ fun search(books: MutableList<Book>, userInput: () -> String) {
                 println("Enter author name:")
                 searchByAuthor(userInput(), books, userInput)
             }
+
             "t", "title" -> {
                 println("Enter title:")
                 searchByTitle(userInput(), books, userInput)
             }
+
             "i", "isbn" -> {
                 println("Enter ISBN:")
                 searchByISBN(userInput(), books, userInput)
             }
+
             "b", "back" -> {
                 println("Returning to main menu.")
                 keepSearching = false
             }
+
             else -> println("Invalid search type. Try again.")
         }
     }
@@ -35,7 +40,7 @@ fun searchByAuthor(author: String, books: MutableList<Book>, userInput: () -> St
     checkoutBooks(available, books, userInput)
 }
 
-fun searchByTitle(title: String, books: MutableList<Book>, userInput: () -> String ) {
+fun searchByTitle(title: String, books: MutableList<Book>, userInput: () -> String) {
     val filtered = filterBooksByTitle(books, title)
     val available = checkBookStatus(filtered)
     checkoutBooks(available, books, userInput)

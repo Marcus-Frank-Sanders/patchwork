@@ -1,4 +1,4 @@
-package org.patchwork
+package com.patchwork
 
 import kotlinx.serialization.Serializable
 

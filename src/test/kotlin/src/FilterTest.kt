@@ -1,11 +1,11 @@
 package src
 
+import com.patchwork.Book
+import com.patchwork.checkBookStatus
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.collections.shouldContainAll
 import io.kotest.matchers.collections.shouldHaveSize
 import io.kotest.matchers.shouldBe
-import org.patchwork.Book
-import org.patchwork.checkBookStatus
 
 class FilterTest : StringSpec({
 

@@ -1,5 +1,6 @@
 @file:JvmName("FiltersKt")
-package org.patchwork
+
+package com.patchwork
 
 fun filterBooksByAuthor(books: List<Book>, author: String): List<Book> =
     books.filter { it.author.contains(author.trim(), ignoreCase = true) }
