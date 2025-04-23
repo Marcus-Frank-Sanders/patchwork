@@ -47,7 +47,7 @@ You can run the app using Gradle or the Gradle Wrapper:
 ./gradlew clean build
 ```
 ```bash
-./gradlew run
+./gradlew run --no-daemon
 ```
 
 #### Make sure to set the environment variable if needed:
